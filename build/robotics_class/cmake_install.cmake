@@ -50,6 +50,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/ros2/Documents/workspace_robotica/src/robotics_class/rviz"
     "/home/ros2/Documents/workspace_robotica/src/robotics_class/worlds"
     "/home/ros2/Documents/workspace_robotica/src/robotics_class/params"
+    "/home/ros2/Documents/workspace_robotica/src/robotics_class/maps"
     )
 endif()
 

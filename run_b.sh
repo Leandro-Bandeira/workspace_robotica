@@ -41,17 +41,11 @@ tmux send-keys -t $SESSION:4 \
   "source install/setup.bash && ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=jetauto/cmd_vel" C-m
 sleep 1
 
-
-# Aba 5 - NAV2 (executa antes do SLAM)
-tmux new-window -t $SESSION -n nav2
+# Aba 5 - localization
+tmux new-window -t $SESSION -n localization
 tmux send-keys -t $SESSION:5 \
-  "source install/setup.bash && ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true" C-m
-sleep 3 # O Nav2 demora um pouco para carregar os costmaps
-
-# Aba 6 - SLAM (última)
-tmux new-window -t $SESSION -n slam
-tmux send-keys -t $SESSION:6 \
-  "source install/setup.bash && ros2 launch robotics_class slam.launch.py" C-m
+  "source install/setup.bash && ros2 launch robotics_class localization.launch.py" C-m
+sleep 1
 
 # Volta para a primeira aba
 tmux select-window -t $SESSION:0
