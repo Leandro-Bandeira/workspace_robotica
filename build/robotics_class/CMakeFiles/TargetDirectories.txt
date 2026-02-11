@@ -1,0 +1,9 @@
+/home/ros2/Documents/workspace_robotica/build/robotics_class/CMakeFiles/uninstall.dir
+/home/ros2/Documents/workspace_robotica/build/robotics_class/CMakeFiles/robotics_class_uninstall.dir
+/home/ros2/Documents/workspace_robotica/build/robotics_class/CMakeFiles/test.dir
+/home/ros2/Documents/workspace_robotica/build/robotics_class/CMakeFiles/edit_cache.dir
+/home/ros2/Documents/workspace_robotica/build/robotics_class/CMakeFiles/rebuild_cache.dir
+/home/ros2/Documents/workspace_robotica/build/robotics_class/CMakeFiles/list_install_components.dir
+/home/ros2/Documents/workspace_robotica/build/robotics_class/CMakeFiles/install.dir
+/home/ros2/Documents/workspace_robotica/build/robotics_class/CMakeFiles/install/local.dir
+/home/ros2/Documents/workspace_robotica/build/robotics_class/CMakeFiles/install/strip.dir
