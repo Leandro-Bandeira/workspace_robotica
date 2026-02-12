@@ -1,4 +1,0 @@
-Invoking command in '/home/ros2/Documents/workspace_robotica/build/robotics_class': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros2/Documents/workspace_robotica/build/robotics_class -- -j16 -l16
-Invoked command in '/home/ros2/Documents/workspace_robotica/build/robotics_class' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros2/Documents/workspace_robotica/build/robotics_class -- -j16 -l16
-Invoking command in '/home/ros2/Documents/workspace_robotica/build/robotics_class': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros2/Documents/workspace_robotica/build/robotics_class
-Invoked command in '/home/ros2/Documents/workspace_robotica/build/robotics_class' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros2/Documents/workspace_robotica/build/robotics_class

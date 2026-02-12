@@ -16,9 +16,7 @@ amcl:
     laser_likelihood_max_dist: 2.0
     laser_max_beams: 60
     
-    # --- CORREÇÃO AQUI ---
     laser_model_type: "nav2_amcl::LikelihoodFieldModel" 
-    # ---------------------
     
     max_beams: 60
     max_particles: 2000
@@ -30,9 +28,8 @@ amcl:
     recovery_alpha_slow: 0.0
     resample_interval: 1
     
-    # --- CORREÇÃO AQUI ---
+  
     robot_model_type: "nav2_amcl::DifferentialMotionModel"
-    # ---------------------
     
     save_pose_rate: 0.5
     sigma_hit: 0.2
@@ -46,10 +43,9 @@ amcl:
     z_short: 0.05
     scan_topic: /jetauto/lidar/scan
     
-    # Configuração da Pose Inicial (Para o mapa aparecer sozinho)
     set_initial_pose: true
     initial_pose:
-      x: 0.0
-      y: 0.0
-      z: 0.0
+      x: 5.0
+      y: 5.0
+      z: 0.15
       yaw: 0.0

@@ -8,10 +8,9 @@ from launch_ros.actions import Node
 from launch.conditions import IfCondition
 
 def generate_launch_description():
-    # Caminhos
+   
     pkg_share = get_package_share_directory('robotics_class')
-    
-    # Argumentos de Launch
+
     map_file_arg = DeclareLaunchArgument(
         'map',
         default_value=os.path.join(pkg_share, 'maps', 'class_map.yaml'),
@@ -32,13 +31,13 @@ def generate_launch_description():
         default_value='true',
         description='Automatically startup the nav2 stack')
 
-    # Variáveis
+  
     map_yaml_file = LaunchConfiguration('map')
     params_file = LaunchConfiguration('params_file')
     use_sim_time = LaunchConfiguration('use_sim_time')
     autostart = LaunchConfiguration('autostart')
 
-    # 1. Nó do Map Server (Carrega o mapa estático)
+
     map_server_node = Node(
         package='nav2_map_server',
         executable='map_server',
@@ -49,7 +48,7 @@ def generate_launch_description():
                     {'use_sim_time': use_sim_time}]
     )
 
-    # 2. Nó do AMCL (Localização Probabilística)
+
     amcl_node = Node(
         package='nav2_amcl',
         executable='amcl',
@@ -57,10 +56,10 @@ def generate_launch_description():
         output='screen',
         parameters=[params_file,
                     {'use_sim_time': use_sim_time}]
-        # O remapping do scan já está sendo feito via default.yaml na linha scan_topic
+       
     )
 
-    # 3. Lifecycle Manager (Gerente que ativa os nós na ordem certa)
+
     lifecycle_manager_node = Node(
         package='nav2_lifecycle_manager',
         executable='lifecycle_manager',

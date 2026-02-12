@@ -39,7 +39,6 @@ def generate_launch_description():
                                'params', 'default.yaml'),
     description='Full path to the ROS2 parameters file to use for the slam_toolbox node')
 
-    # Perform substitution `$find-pkg-share`
     slam_params_file_w_subst = ParameterFile(
         slam_params_file,
         allow_substs=True,
